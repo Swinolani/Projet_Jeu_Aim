@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Projet_jeu_aim.css">
+    <title>Jeu d'aim</title>
+</head>
+<body>
+    <div class="canvas">
+        <div class="chrono"></div>
+        <div class="listImage">
+            <img src="Image_selection/Univers.jpg" alt="L'univers" title="L'univers"><img src="Image_selection/Savane.jpg" alt="La savane" title="La savane"><img src="Image_selection/Pole_nord.jpg" alt="Le pôle nord" title="Le pôle nord"><img src="Image_selection/Plage.jpg" alt="La plage" title="La plage"><img src="Image_selection/Canyon.jpg" alt="Le canyon" title="Le canyon">
+        </div>
+        <span id="gommete"></span>
+        <fieldset>
+            <legend>Paramètres</legend>
+            <label class="titreLabel">Choisissez la taille du cercle</label><br>
+            <input type="radio" name="taille" id="Grand"><label for="Grand">Grand</label><br>
+            <input type="radio" name="taille" id="Moyen" checked><label for="Moyen">Moyen</label><br>
+            <input type="radio" name="taille" id="Petit"><label for="Petit">Petit</label><br>
+            <input type="radio" name="taille" id="TresPetit"><label for="TresPetit">Très petit</label><br><br>
+            <label class="'titreLabel">Choisissez la couleur du cercle</label><br>
+            <input type="color" name="couleur" id="couleur"><br><br>
+            <label id="information">Initialisez votre chrono (le temps maximum est de 3 minutes)</label><br>
+            <input type="text" name="Minutes" id="Minutes"  maxlength="1"><label for="Minutes"> Minute(s) </label><input type="text" name="Secondes" id="Secondes" maxlength="2"><label for="Secondes"> Seconde(s)</label><br><br>
+            <input type="button" value="Valider mes choix" id="validation">
+        </fieldset>
+    </div>
+    <div id="baliseDecompte">3</div>
+    <script src="Projet_jeu_aim.js"></script>
+</body>
+</html>
